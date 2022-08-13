@@ -10,21 +10,28 @@ function App() {
         <h2>Helping Filipinos build in the Web3 space!</h2>
         <section>
           <a
-            href="https://mail.google.com/mail/u/0/?fs=1&to=fake-email@gmail.com&tf=cm"
+            href="mailto:sudo@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
             target="_blank"
             rel="noreferrer noopener"
           >
-            fake-email@gmail.com
+            sudo@web3philippines.org
           </a>
           <a
-            href="https://www.facebook.com/groups/web3philippines"
+            href="https://facebook.com/groups/web3philippines"
             target="_blank"
             rel="noreferrer noopener"
           >
             Facebook Group
           </a>
           <a
-            href="https://www.facebook.com/web3phl"
+            href="https://reddit.com/r/web3philippines"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Reddit
+          </a>
+          <a
+            href="https://facebook.com/web3phl"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -38,7 +45,7 @@ function App() {
             Twitter
           </a>
           <a
-            href="https://www.instagram.com/web3phl/"
+            href="https://instagram.com/web3phl/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -49,7 +56,6 @@ function App() {
     </StyledScope>
   );
 }
-// https://mail.google.com/mail/u/0/?fs=1&to=kmquirapas@gmail.com&tf=cm
 
 const StyledScope = styled.div`
   background: rgb(1, 110, 234);
