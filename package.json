@@ -39,5 +39,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26",
+    "eslint": "^8.21.0",
+    "prettier": "^2.7.1",
+    "styled-components": "^5.3.5"
   }
 }
