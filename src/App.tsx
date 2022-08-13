@@ -85,7 +85,7 @@ const StyledMain = styled.main`
   color: white;
 
   img {
-    width 100px;
+    width 150px;
   }
 
   h1 {
