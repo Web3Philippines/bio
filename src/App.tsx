@@ -1,5 +1,8 @@
 import "./App.css";
 import styled from "styled-components";
+import { Discord, Facebook, Instagram, Reddit, Twitter } from '@icons-pack/react-simple-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressBook, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -10,46 +13,60 @@ function App() {
         <h2>Helping Filipinos build in the Web3 space!</h2>
         <section>
           <a
+            href="https://directory.web3philippines.org"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FontAwesomeIcon icon={faAddressBook} className='icon-style' size="lg" /> Directory
+          </a>
+          <a
             href="mailto:sudo@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
             target="_blank"
             rel="noreferrer noopener"
           >
-            sudo@web3philippines.org
+            <FontAwesomeIcon icon={faEnvelope} className='icon-style' size="lg" /> Contact Us
           </a>
           <a
-            href="https://facebook.com/groups/web3philippines"
-            target="_blank"
+            href="https://web3philippines.org/discord"
+            target="_blank"className='icon-style'
             rel="noreferrer noopener"
           >
-            Facebook Group
-          </a>
-          <a
-            href="https://reddit.com/r/web3philippines"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Reddit
+            <Discord color='#fff' size={24} className='icon-style'/> Discord
           </a>
           <a
             href="https://facebook.com/web3phl"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Facebook Page
+            <Facebook color='#fff' size={24} className='icon-style'/> Page
+          </a>
+          <a
+            href="https://facebook.com/groups/web3philippines"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Facebook color='#fff' size={24} className='icon-style'/> Group
           </a>
           <a
             href="https://twitter.com/web3phl"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Twitter
+            <Twitter color='#fff' size={24} className='icon-style'/> Twitter
           </a>
           <a
             href="https://instagram.com/web3phl/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Instagram
+            <Instagram color='#fff' size={24} className='icon-style'/> Instagram
+          </a>
+          <a
+            href="https://reddit.com/r/web3philippines"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Reddit color='#fff' size={24} className='icon-style'/> Reddit
           </a>
         </section>
       </StyledMain>
@@ -131,6 +148,9 @@ const StyledMain = styled.main`
     transition: transform 0.2s ease-in-out;
     border: 1px solid transparent;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       transform: translateY(-10px);
@@ -138,6 +158,9 @@ const StyledMain = styled.main`
     }
   }
 
+  .icon-style {
+    margin-right: 10px;
+  }
   
   @media only screen and (max-width: 480px) {
     h1 {
