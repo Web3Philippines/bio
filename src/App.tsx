@@ -1,8 +1,8 @@
 import "./App.css";
 import styled from "styled-components";
-import { Discord, Facebook, Instagram, Reddit, Twitter } from '@icons-pack/react-simple-icons';
+import { Discord, Facebook, Instagram, Linkedin, Reddit, Twitter } from '@icons-pack/react-simple-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressBook, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faEnvelope, faVrCardboard } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -53,6 +53,20 @@ function App() {
             rel="noreferrer noopener"
           >
             <Twitter color='#fff' size={24} className='icon-style'/> Twitter
+          </a>
+          <a
+            href="https://app.gather.town/app/EgdJnVXXhokxeu8g/web3philippines"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FontAwesomeIcon icon={faVrCardboard} className='icon-style' size="lg" /> Gather
+          </a>
+          <a
+            href="https://linkedin.com/company/web3phl"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Linkedin color='#fff' size={24} className='icon-style'/> Linkedin
           </a>
           <a
             href="https://instagram.com/web3phl/"
