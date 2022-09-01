@@ -1,6 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
-import { Discord, Facebook, Instagram, Linkedin, Reddit, Twitter } from '@icons-pack/react-simple-icons';
+import { Discord, Facebook, Instagram, Linkedin, Reddit, Tiktok, Twitter, Youtube } from '@icons-pack/react-simple-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faEnvelope, faVrCardboard } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,8 +9,8 @@ function App() {
     <StyledScope>
       <StyledMain>
         <img src="assets/images/logo.png" alt="Web 3 Philippines Logo" />
-        <h1>Web 3 Philippines</h1>
-        <h2>Helping Filipinos build in the Web3 space!</h2>
+        <h1>Web3 Philippines</h1>
+        <h2>Helping Filipinos to build in the Web3 space!</h2>
         <section>
           <a
             href="https://directory.web3philippines.org"
@@ -81,6 +81,20 @@ function App() {
             rel="noreferrer noopener"
           >
             <Reddit color='#fff' size={24} className='icon-style'/> Reddit
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC1lc-7tbvRiOxspdsn6SCHA"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Youtube color='#fff' size={24} className='icon-style'/> YouTube
+          </a>
+          <a
+            href="https://www.tiktok.com/@web3phl"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Tiktok color='#fff' size={24} className='icon-style'/> Tiktok
           </a>
         </section>
       </StyledMain>
