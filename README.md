@@ -1,8 +1,10 @@
-# Web3 Philippines Homepage
+# Web3 Philippines Homepage [![created by](https://img.shields.io/badge/created%20by-Web3%20Philippines%20Community-7b3fe4.svg?longCache=true&style=flat-square)](https://web3philippines.org)
 
-[![created by](https://img.shields.io/badge/created%20by-Web3%20Philippines-purple.svg?longCache=true&style=flat-square)](https://web3philippines.org) [![maintained by](https://img.shields.io/badge/maintained%20by-Wareneutron%20Developers-blue.svg?longCache=true&style=flat-square)](https://wareneutron.com) [![Star](https://img.shields.io/github/stars/web3phl/homepage.svg?style=flat-square)](https://github.com/web3phl/homepage/stargazers) [![License](https://img.shields.io/github/license/web3phl/homepage.svg?style=flat-square)](https://github.com/web3phl/homepage/blob/main/LICENSE)
+[![maintained by](https://img.shields.io/badge/maintained%20by-OSS%20Philippines-blue.svg?longCache=true&style=flat-square)](https://ossph.org) [![maintained by](https://img.shields.io/badge/maintained%20by-Wareneutron%20Devs-blue.svg?longCache=true&style=flat-square)](https://wareneutron.com) [![Release](https://img.shields.io/github/release/web3phl/homepage.svg?style=flat-square)](https://github.com/web3phl/homepage/releases) [![Star](https://img.shields.io/github/stars/web3phl/homepage.svg?style=flat-square)](https://github.com/web3phl/homepage/stargazers) [![License](https://img.shields.io/github/license/web3phl/homepage.svg?style=flat-square)](https://github.com/web3phl/homepage/blob/main/LICENSE)
 
-**Web3 Philippines Homepage** is an open-source community made homepage. Actively maintained by the Web3 community in the Philippines. 📚💜💻
+[![homepage banner](./.github/image/banner.jpg)](https://web3philippines.org)
+
+**Homepage** is an open-source community made homepage. Actively maintained by the Web3 community in the Philippines. 📚💜💻
 
 ## 🎯 Contributing
 
@@ -28,10 +30,10 @@ Web3 Philippines Homepage is licensed under [GNU General Public License v3.0](ht
 
 ## 📝 Author
 
-Web3 Philippines Homepage is developed and maintained by [Web3 Philippines](https://web3philippines.org) & [Wareneutron Developers](https://wareneutron.com) with the help of awesome [contributors](https://github.com/web3phl/homepage/graphs/contributors).
+Web3 Philippines Homepage is developed and maintained by [Web3 Philippines](https://web3philippines.org), [OSS Philippines](https://ossph.org) and [Wareneutron Devs](https://wareneutron.com) with the help of awesome [contributors](https://github.com/web3phl/homepage/graphs/contributors).
 
 [![contributors](https://contrib.rocks/image?repo=web3phl/homepage)](https://github.com/web3phl/homepage/graphs/contributors)
 
 ---
 
-💻💖☕ by [Web3 Philippines](https://web3philippines.org) & [Wareneutron Developers](https://wareneutron.com) | YHWH 🙏
+💻💖☕ by [Web3 Philippines](https://web3philippines.org), [OSS Philippines](https://ossph.org), and [Wareneutron Devs](https://wareneutron.com) | He is Awesome 🙏
