@@ -10,7 +10,7 @@ function App() {
       <StyledMain>
         <img src="assets/images/logo.png" alt="Web 3 Philippines Logo" />
         <h1>Web3 Philippines</h1>
-        <h2>Helping Filipinos to build in the Web3 space!</h2>
+        <h2>Helping Filipinos build in Web3 space!</h2>
         <section>
           <a
             href="https://directory.web3philippines.org"
@@ -20,7 +20,7 @@ function App() {
             <FontAwesomeIcon icon={faAddressBook} className='icon-style' size="lg" /> Directory
           </a>
           <a
-            href="mailto:sudo@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
+            href="mailto:gm@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -136,7 +136,7 @@ const StyledMain = styled.main`
   color: white;
 
   img {
-    width 150px;
+    width 125px;
   }
 
   h1 {
