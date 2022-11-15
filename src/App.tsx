@@ -43,7 +43,7 @@ function App() {
 
           {/* Email */}
           <a
-            href="mailto:sudo@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
+            href="mailto:gm@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
             target="_blank"
             rel="noreferrer noopener"
           >
