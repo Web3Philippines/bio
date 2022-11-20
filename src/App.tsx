@@ -59,7 +59,6 @@ function App() {
           <a
             href="https://web3philippines.org/discord"
             target="_blank"
-            className="icon-style"
             rel="noreferrer noopener"
           >
             <Discord color="#fff" size={24} className="icon-style" /> Discord
