@@ -1,23 +1,8 @@
 import "./App.css";
 import styled from "styled-components";
-import {
-  Discord,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Reddit,
-  Telegram,
-  Tiktok,
-  Twitter,
-  Youtube,
-} from "@icons-pack/react-simple-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAddressBook,
-  faEnvelope,
-  faUserGroup,
-  faVrCardboard,
-} from "@fortawesome/free-solid-svg-icons";
+import links from "./data/links";
+import { linkType } from "./data/links";
+import LinkButton from "./components/LinkButton";
 
 function App() {
   return (
@@ -25,156 +10,26 @@ function App() {
       <StyledMain>
         <img src="assets/images/logo.png" alt="Web 3 Philippines Logo" />
         <h2>Helping Filipinos build in Web3 space! 🚀</h2>
-        <section>
-
-          {/* Directory */}
-          <a
-            href="https://directory.web3philippines.org"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FontAwesomeIcon
-              icon={faAddressBook}
-              className="icon-style"
-              size="lg"
-            />{" "}
-            Directory
-          </a>
-
-          {/* Email */}
-          <a
-            href="mailto:gm@web3philippines.org?subject=GM%2C%20Web3%20Philippines%20Team!&body=LPG%20mga%20kabatak!"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="icon-style"
-              size="lg"
-            />{" "}
-            Email Us
-          </a>
-
-          {/* Discord Server */}
-          <a
-            href="https://web3philippines.org/discord"
-            target="_blank"
-            className="icon-style"
-            rel="noreferrer noopener"
-          >
-            <Discord color="#fff" size={24} className="icon-style" /> Discord
-          </a>
-          
-          {/* Facebook Group */}
-          <a
-            href="https://facebook.com/groups/web3philippines"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Facebook color="#fff" size={24} className="icon-style" /> Group
-          </a>
-
-          {/* Nas.io */}
-          <a
-            href="https://nas.io/web3philippines"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FontAwesomeIcon
-              icon={faUserGroup}
-              className="icon-style"
-              size="lg"
-            />{" "}
-            Nas.io
-          </a>
-
-          {/* Telegram */}
-          <a
-            href="https://t.me/web3philippines"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Telegram color="#fff" size={24} className="icon-style" /> Telegram
-          </a>
-
-          {/* Facebook Page */}
-          <a
-            href="https://facebook.com/web3phl"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Facebook color="#fff" size={24} className="icon-style" /> Page
-          </a>
-
-          {/* Twitter */}
-          <a
-            href="https://twitter.com/web3phl"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Twitter color="#fff" size={24} className="icon-style" /> Twitter
-          </a>
-
-          {/* Gather.Town */}
-          <a
-            href="https://app.gather.town/app/EgdJnVXXhokxeu8g/web3philippines"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <FontAwesomeIcon
-              icon={faVrCardboard}
-              className="icon-style"
-              size="lg"
-            />{" "}
-            Gather
-          </a>
-
-          {/* LinkedIn */}
-          <a
-            href="https://linkedin.com/company/web3phl"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Linkedin color="#fff" size={24} className="icon-style" /> Linkedin
-          </a>
-
-          {/* Instagram */}
-          <a
-            href="https://instagram.com/web3phl"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Instagram color="#fff" size={24} className="icon-style" />{" "}
-            Instagram
-          </a>
-
-          {/* Reddit */}
-          <a
-            href="https://reddit.com/r/web3philippines"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Reddit color="#fff" size={24} className="icon-style" /> Reddit
-          </a>
-
-          {/* YouTube */}
-          <a
-            href="https://youtube.com/@web3phl"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Youtube color="#fff" size={24} className="icon-style" /> YouTube
-          </a>
-
-          {/* Tiktok */}
-          <a
-            href="https://tiktok.com/@web3phl"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Tiktok color="#fff" size={24} className="icon-style" /> Tiktok
-          </a>
-        </section>
+        {["Community", "Socials", "Projects"].map((section: string) => {
+          return (
+            <section key={section} id={section.toLowerCase()}>
+              <h3>{section}</h3>
+              {links[section.toLowerCase() as keyof typeof links].map(
+                (item: linkType) => {
+                  return (
+                    <LinkButton
+                      key={item.id}
+                      id={item.id}
+                      title={item.title}
+                      url={item.url}
+                      icon={item.icon}
+                    />
+                  );
+                }
+              )}
+            </section>
+          );
+        })}
       </StyledMain>
     </StyledScope>
   );
@@ -203,7 +58,7 @@ const StyledScope = styled.div`
 const StyledMain = styled.main`
   padding: 10vw;
   box-sizing: border-box;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,7 +70,7 @@ const StyledMain = styled.main`
 
   img {
     width: 100%;
-    max-width 270px;
+    max-width: 270px;
     margin-bottom: 2em;
   }
 
@@ -235,12 +90,31 @@ const StyledMain = styled.main`
     font-size: 1.2em;
     text-align: center;
   }
-  
+
+  h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
   section {
+    min-width: 350px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 10px;
+  }
+
+  section h3 {
+    grid-column: span 2 / span 2;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 100%;
   }
 
   a {
@@ -269,7 +143,7 @@ const StyledMain = styled.main`
   .icon-style {
     margin-right: 10px;
   }
-  
+
   @media only screen and (max-width: 480px) {
     h1 {
       font-size: 1.5em;
@@ -281,7 +155,12 @@ const StyledMain = styled.main`
 
   @media only screen and (max-width: 768px) {
     section {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      min-width: 175px;
+    }
+
+    section h3 {
+      grid-column: span 1 / span 1;
     }
   }
 `;
